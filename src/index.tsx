@@ -28,9 +28,9 @@ const App = () => {
       entryPoints: ['index.js'],
       bundle: true,
       write: false,
-      pulgins: [unpkgPathPlugin()]
+      plugins: [unpkgPathPlugin()]
     });
-
+    setCode(result.outputFiles[0].text);
     console.log(result);
   };
 
